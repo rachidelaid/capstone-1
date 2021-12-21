@@ -1,0 +1,72 @@
+.speakers {
+  padding: $basic-padding;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  & h3 {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  & hr {
+    margin-top: -30px;
+  }
+
+  & .card {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 150px auto;
+    place-items: center;
+
+    & .image {
+      background-image: url(../../images/checker.png);
+      background-repeat: no-repeat;
+      background-size: 80px 80px;
+      padding: 20px 0 0 20px;
+
+      & img {
+        width: 130px;
+      }
+    }
+
+    & h4 {
+      font-family: $header-font;
+      font-size: 20px;
+    }
+
+    & span {
+      color: $primary;
+      font-style: italic;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    & hr {
+      color: $gray;
+      margin: 10px 0;
+      width: 20px;
+    }
+  }
+
+  & .more-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: $basic-padding/2;
+    border: 2px solid $gray;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $primary;
+    }
+
+    & i {
+      color: $primary;
+    }
+  }
+}

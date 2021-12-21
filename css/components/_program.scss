@@ -1,0 +1,29 @@
+.program {
+  padding: $basic-padding;
+  background-image: url(../../images/Sprinkle.svg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  & h3 {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  & .card {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: grid;
+    grid-template-columns: 60px 120px auto;
+    place-items: center;
+
+    & h4 {
+      color: $primary;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+body {
+  font-family: $normal-font;
+  color: $dark;
+  line-height: 1.5;
+}
+
+.logo {
+  font-family: $header-font;
+  font-weight: bold;
+  font-size: 20px;
+
+  & span {
+    color: $primary;
+  }
+}
+
+button {
+  padding: $basic-padding + 5;
+  background-color: $primary;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary, 10);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+hr {
+  color: $primary;
+  width: 60px;
+  margin-bottom: 40px;
+}

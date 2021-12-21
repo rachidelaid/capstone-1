@@ -1,0 +1,297 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  line-height: 1.5;
+}
+
+.logo {
+  font-family: "Secular One", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #ec5242;
+}
+
+button {
+  padding: 39px;
+  background-color: #ec5242;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e42a17;
+}
+
+button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+hr {
+  color: #ec5242;
+  width: 60px;
+  margin-bottom: 40px;
+}
+
+header {
+  background-image: url(../../images/CircuitBoard.svg);
+  background-size: cover;
+}
+
+header .top-nav {
+  background-color: #272a31;
+  color: #fff;
+  padding: 10px;
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .top-nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+header .navbar {
+  padding: 34px;
+}
+
+header .navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+header .navbar .menu > span {
+  width: 30px;
+  height: 5px;
+  background-color: #272a31;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+header .hero {
+  padding: 34px;
+  padding-bottom: 70px;
+}
+
+header .hero > h1 {
+  font-family: "Secular One", sans-serif;
+  font-size: 50px;
+  background-image: url(../../images/BlobGroup.svg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header .hero .description {
+  padding: 15px;
+  background-color: #f2f2f2;
+  border: 5px solid #fff;
+}
+
+header .hero > h2 {
+  font-family: "Secular One", sans-serif;
+  font-size: 30px;
+}
+
+.program {
+  padding: 34px;
+  background-image: url(../../images/Sprinkle.svg);
+  background-size: cover;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.program h3 {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.program .card {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 120px auto;
+      grid-template-columns: 60px 120px auto;
+  place-items: center;
+}
+
+.program .card h4 {
+  color: #ec5242;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.speakers {
+  padding: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.speakers h3 {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.speakers hr {
+  margin-top: -30px;
+}
+
+.speakers .card {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: 150px auto;
+      grid-template-columns: 150px auto;
+  place-items: center;
+}
+
+.speakers .card .image {
+  background-image: url(../../images/checker.png);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  padding: 20px 0 0 20px;
+}
+
+.speakers .card .image img {
+  width: 130px;
+}
+
+.speakers .card h4 {
+  font-family: "Secular One", sans-serif;
+  font-size: 20px;
+}
+
+.speakers .card span {
+  color: #ec5242;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.speakers .card hr {
+  color: #d3d3d3;
+  margin: 10px 0;
+  width: 20px;
+}
+
+.speakers .more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.speakers .more-btn:hover {
+  border-color: #ec5242;
+}
+
+.speakers .more-btn i {
+  color: #ec5242;
+}
+
+.partner {
+  background-color: #272a31;
+  padding: 34px;
+  color: #d3d3d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner h3 {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.partner .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer {
+  padding: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+/*# sourceMappingURL=index.css.map */

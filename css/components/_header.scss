@@ -1,0 +1,60 @@
+header {
+  background-image: url(../../images/CircuitBoard.svg);
+  background-size: cover;
+
+  & .top-nav {
+    background-color: $dark;
+    color: #fff;
+    padding: 10px;
+    display: none; //for now
+    justify-content: end;
+
+    & > ul {
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+  & .navbar {
+    padding: $basic-padding;
+
+    & .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      & > span {
+        width: 30px;
+        height: 5px;
+        background-color: $dark;
+        transform-origin: right;
+      }
+    }
+  }
+
+  & .hero {
+    padding: $basic-padding;
+    padding-bottom: 70px;
+
+    & > h1 {
+      font-family: $header-font;
+      font-size: 50px;
+      background-image: url(../../images/BlobGroup.svg);
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    & .description {
+      padding: 15px;
+      background-color: darken(#fff, 5);
+      border: 5px solid #fff;
+    }
+
+    & > h2 {
+      font-family: $header-font;
+      font-size: 30px;
+    }
+  }
+}
