@@ -65,6 +65,10 @@
       border-color: $primary;
     }
 
+    &:active {
+      font-size: 110%;
+    }
+
     & i {
       color: $primary;
     }

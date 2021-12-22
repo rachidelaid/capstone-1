@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   color: inherit;
   list-style: none;
 }
@@ -13,6 +12,17 @@ body {
   font-family: $normal-font;
   color: $dark;
   line-height: 1.5;
+}
+
+a {
+  font-weight: bold;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.txt-center {
+  text-align: center;
 }
 
 .logo {
@@ -48,4 +58,10 @@ hr {
   color: $primary;
   width: 60px;
   margin-bottom: 40px;
+}
+
+@for $n from 1 through 5 {
+  .p-#{$n} {
+    padding: $n * 5px;
+  }
 }

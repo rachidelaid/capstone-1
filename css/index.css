@@ -5,7 +5,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-decoration: none;
   color: inherit;
   list-style: none;
 }
@@ -14,6 +13,18 @@ body {
   font-family: "Lato", sans-serif;
   color: #272a31;
   line-height: 1.5;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ec5242;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 .logo {
@@ -50,6 +61,26 @@ hr {
   color: #ec5242;
   width: 60px;
   margin-bottom: 40px;
+}
+
+.p-1 {
+  padding: 5px;
+}
+
+.p-2 {
+  padding: 10px;
+}
+
+.p-3 {
+  padding: 15px;
+}
+
+.p-4 {
+  padding: 20px;
+}
+
+.p-5 {
+  padding: 25px;
 }
 
 header {
@@ -246,6 +277,10 @@ header .hero > h2 {
   border-color: #ec5242;
 }
 
+.speakers .more-btn:active {
+  font-size: 110%;
+}
+
 .speakers .more-btn i {
   color: #ec5242;
 }
@@ -293,5 +328,59 @@ header .hero > h2 {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+}
+
+.past {
+  padding: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.past hr {
+  width: 30px;
+  margin: 0;
+}
+
+.past .card {
+  background-size: cover;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1.5;
+}
+
+.past .card .content {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(236, 82, 66, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.past .card .content h4 {
+  font-size: 34px;
 }
 /*# sourceMappingURL=index.css.map */
