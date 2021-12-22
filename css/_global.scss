@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $normal-font;
   color: $dark;

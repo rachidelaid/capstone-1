@@ -30,6 +30,10 @@
       grid-template-columns: 150px auto;
       place-items: center;
 
+      @include desktop {
+        display: grid !important;
+      }
+
       & .image {
         background-image: url(../../images/checker.png);
         background-repeat: no-repeat;
@@ -57,6 +61,14 @@
         color: $gray;
         margin: 10px 0;
         width: 20px;
+      }
+    }
+
+    & .card:not(:first-child):not(:nth-child(2)) {
+      display: none;
+
+      @include desktop {
+        display: grid;
       }
     }
   }
@@ -88,6 +100,12 @@
 
     & i {
       color: $primary;
+    }
+  }
+
+  & .less-btn {
+    & i {
+      transform: rotate(180deg);
     }
   }
 }

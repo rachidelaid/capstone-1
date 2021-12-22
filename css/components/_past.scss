@@ -32,6 +32,14 @@
       max-width: 400px;
       aspect-ratio: 1.5;
 
+      &:first-child {
+        background-image: url(../images/2015.jpg);
+      }
+
+      &:last-child {
+        background-image: url(../images/2013.png);
+      }
+
       & .content {
         border-radius: 5px;
         display: flex;
