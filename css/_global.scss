@@ -65,3 +65,16 @@ hr {
     padding: $n * 5px;
   }
 }
+
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100% !important;
+}
