@@ -13,17 +13,46 @@
     margin-top: 24px;
   }
 
-  & .card {
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.15);
-    display: grid;
-    grid-template-columns: 60px 120px auto;
-    place-items: center;
+  & .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
-    & h4 {
-      color: $primary;
-      font-weight: bold;
-      font-size: 24px;
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 100%;
+      max-width: 1400px;
+      text-align: center;
+    }
+
+    & .card {
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.15);
+      display: grid;
+      grid-template-columns: 60px 100px auto;
+      place-items: center;
+
+      @include desktop {
+        grid-template-columns: 1fr;
+      }
+
+      & h4 {
+        color: $primary;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+
+  & a {
+    margin: 20px 0;
+    margin-top: 35px;
+  }
+
+  @include desktop {
+    & button {
+      display: none;
     }
   }
 }

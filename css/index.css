@@ -83,6 +83,20 @@ hr {
   padding: 25px;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100% !important;
+}
+
 header {
   background-image: url(../../images/CircuitBoard.svg);
   background-size: cover;
@@ -91,7 +105,7 @@ header {
 header .top-nav {
   background-color: #272a31;
   color: #fff;
-  padding: 10px;
+  padding: 10px 24px;
   display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -105,8 +119,72 @@ header .top-nav > ul {
   gap: 15px;
 }
 
+header .top-nav > ul a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  header .top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 header .navbar {
   padding: 34px;
+}
+
+@media (min-width: 768px) {
+  header .navbar {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 15px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .navbar h2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .navbar h2 {
+    display: block;
+  }
+}
+
+header .navbar .logo {
+  color: unset;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header .navbar .links {
+  display: none;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  header .navbar .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header .navbar .links a {
+  text-decoration: none;
+  font-weight: 400;
 }
 
 header .navbar .menu {
@@ -118,6 +196,12 @@ header .navbar .menu {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+}
+
+@media (min-width: 768px) {
+  header .navbar .menu {
+    display: none;
+  }
 }
 
 header .navbar .menu > span {
@@ -133,6 +217,13 @@ header .hero {
   padding-bottom: 70px;
 }
 
+@media (min-width: 768px) {
+  header .hero {
+    padding: 102px;
+    width: 70%;
+  }
+}
+
 header .hero > h1 {
   font-family: "Secular One", sans-serif;
   font-size: 50px;
@@ -141,6 +232,12 @@ header .hero > h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@media (min-width: 768px) {
+  header .hero > h1 {
+    font-size: 60px;
+  }
 }
 
 header .hero .description {
@@ -152,6 +249,7 @@ header .hero .description {
 header .hero > h2 {
   font-family: "Secular One", sans-serif;
   font-size: 30px;
+  margin-top: 15px;
 }
 
 .program {
@@ -177,20 +275,61 @@ header .hero > h2 {
   margin-top: 24px;
 }
 
-.program .card {
+.program .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .program .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+  }
+}
+
+.program .list .card {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.15);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60px 120px auto;
-      grid-template-columns: 60px 120px auto;
+  -ms-grid-columns: 60px 100px auto;
+      grid-template-columns: 60px 100px auto;
   place-items: center;
 }
 
-.program .card h4 {
+@media (min-width: 768px) {
+  .program .list .card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.program .list .card h4 {
   color: #ec5242;
   font-weight: bold;
   font-size: 24px;
+}
+
+.program a {
+  margin: 20px 0;
+  margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+  .program button {
+    display: none;
+  }
 }
 
 .speakers {
@@ -205,7 +344,13 @@ header .hero > h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .speakers {
+    padding: 68px;
+  }
 }
 
 .speakers h3 {
@@ -213,11 +358,27 @@ header .hero > h2 {
   margin-top: 24px;
 }
 
-.speakers hr {
-  margin-top: -30px;
+.speakers .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
 }
 
-.speakers .card {
+@media (min-width: 768px) {
+  .speakers .list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.speakers .list .card {
   display: -ms-grid;
   display: grid;
   gap: 20px;
@@ -226,30 +387,30 @@ header .hero > h2 {
   place-items: center;
 }
 
-.speakers .card .image {
+.speakers .list .card .image {
   background-image: url(../../images/checker.png);
   background-repeat: no-repeat;
   background-size: 80px 80px;
   padding: 20px 0 0 20px;
 }
 
-.speakers .card .image img {
+.speakers .list .card .image img {
   width: 130px;
 }
 
-.speakers .card h4 {
+.speakers .list .card h4 {
   font-family: "Secular One", sans-serif;
   font-size: 20px;
 }
 
-.speakers .card span {
+.speakers .list .card span {
   color: #ec5242;
   font-style: italic;
   font-size: 14px;
   font-weight: bold;
 }
 
-.speakers .card hr {
+.speakers .list .card hr {
   color: #d3d3d3;
   margin: 10px 0;
   width: 20px;
@@ -270,7 +431,15 @@ header .hero > h2 {
   border: 2px solid #d3d3d3;
   border-radius: 5px;
   width: 100%;
+  max-width: 300px;
   cursor: pointer;
+  margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+  .speakers .more-btn {
+    display: none;
+  }
 }
 
 .speakers .more-btn:hover {
@@ -278,7 +447,7 @@ header .hero > h2 {
 }
 
 .speakers .more-btn:active {
-  font-size: 110%;
+  color: #ec5242;
 }
 
 .speakers .more-btn i {
@@ -317,6 +486,14 @@ header .hero > h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .partner .logos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer {
@@ -327,7 +504,17 @@ header .hero > h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d3d3d3;
   gap: 50px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 68px;
+  }
 }
 
 .past {
@@ -350,7 +537,35 @@ header .hero > h2 {
   margin: 0;
 }
 
-.past .card {
+.past .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin: 24px 0;
+}
+
+@media (min-width: 768px) {
+  .past .list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.past .list .card {
   background-size: cover;
   border-radius: 5px;
   color: #fff;
@@ -360,7 +575,7 @@ header .hero > h2 {
   aspect-ratio: 1.5;
 }
 
-.past .card .content {
+.past .list .card .content {
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,7 +595,7 @@ header .hero > h2 {
   height: 100%;
 }
 
-.past .card .content h4 {
+.past .list .card .content h4 {
   font-size: 34px;
 }
 /*# sourceMappingURL=index.css.map */

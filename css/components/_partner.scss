@@ -17,5 +17,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
+
+    @include desktop {
+      justify-content: space-around;
+    }
   }
 }

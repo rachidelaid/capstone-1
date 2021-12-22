@@ -2,5 +2,11 @@
   padding: $basic-padding;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: $gray;
   gap: 50px;
+
+  @include desktop {
+    padding: $basic-padding * 2;
+  }
 }
