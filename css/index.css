@@ -34,7 +34,7 @@ a:hover {
 .logo {
   font-family: 'Secular One', sans-serif;
   font-weight: bold;
-  font-size: 20;
+  font-size: 20px;
 }
 
 .logo span {
@@ -46,7 +46,7 @@ button {
   background-color: #ec5242;
   border: none;
   color: #fff;
-  font-size: 20;
+  font-size: 20px;
   font-weight: bold;
   margin: 25px;
   cursor: pointer;
@@ -63,8 +63,8 @@ button:active {
 
 hr {
   color: #ec5242;
-  width: 60;
-  margin-bottom: 40;
+  width: 60px;
+  margin-bottom: 40px;
 }
 
 .p-1 {
@@ -72,7 +72,7 @@ hr {
 }
 
 .p-2 {
-  padding: 10;
+  padding: 10px;
 }
 
 .p-3 {
@@ -80,7 +80,7 @@ hr {
 }
 
 .p-4 {
-  padding: 20;
+  padding: 20px;
 }
 
 .p-5 {
@@ -120,7 +120,7 @@ header .mobile-menu {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 50;
+  gap: 50px;
 }
 
 @media (min-width: 768px) {
@@ -130,7 +130,7 @@ header .mobile-menu {
 }
 
 header .mobile-menu .links {
-  font-size: 20;
+  font-size: 20px;
 }
 
 header .mobile-menu a {
@@ -144,7 +144,7 @@ header .mobile-menu.show {
 header .top-nav {
   background-color: #272a31;
   color: #fff;
-  padding: 10 24px;
+  padding: 10px 24px;
   display: none;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -236,7 +236,7 @@ header .navbar .menu {
 }
 
 header .navbar .menu > span {
-  width: 30;
+  width: 30px;
   height: 5px;
   background-color: #272a31;
   -webkit-transform-origin: right;
@@ -265,7 +265,7 @@ header .navbar .active span:last-child {
 
 header .hero {
   padding: 34px;
-  padding-bottom: 70;
+  padding-bottom: 70px;
 }
 
 @media (min-width: 768px) {
@@ -278,7 +278,7 @@ header .hero {
 /* eslint-disable */
 header .hero > h1 {
   font-family: 'Secular One', sans-serif;
-  font-size: 50;
+  font-size: 50px;
   background-image: url(../images/BlobGroup.svg);
   background-size: cover;
   background-clip: text;
@@ -289,7 +289,7 @@ header .hero > h1 {
 
 @media (min-width: 768px) {
   header .hero > h1 {
-    font-size: 60;
+    font-size: 60px;
   }
 }
 
@@ -301,7 +301,7 @@ header .hero .description {
 
 header .hero > h2 {
   font-family: 'Secular One', sans-serif;
-  font-size: 30;
+  font-size: 30px;
   margin-top: 15px;
 }
 
@@ -342,7 +342,7 @@ header .hero > h2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     width: 100%;
-    max-width: 1400;
+    max-width: 1400px;
     text-align: center;
   }
 }
@@ -352,8 +352,8 @@ header .hero > h2 {
   background-color: rgba(255, 255, 255, 0.15);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60 100 auto;
-  grid-template-columns: 60 100 auto;
+  -ms-grid-columns: 60px 100px auto;
+  grid-template-columns: 60px 100px auto;
   place-items: center;
   border: 1px transparent solid;
   -webkit-transition: all 0.2s ease-in-out;
@@ -368,8 +368,8 @@ header .hero > h2 {
 }
 
 .program .list .card:hover {
-  -webkit-transform: translateY(-10);
-  transform: translateY(-10);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
   border-color: #fff;
 }
 
@@ -381,7 +381,7 @@ header .hero > h2 {
 
 .program a {
   display: none;
-  margin: 20 0;
+  margin: 20px 0;
   margin-top: 35px;
 }
 
@@ -428,7 +428,7 @@ header .hero > h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 50;
+  gap: 50px;
 }
 
 @media (min-width: 768px) {
@@ -443,9 +443,9 @@ header .hero > h2 {
 .speakers .list .card {
   display: -ms-grid;
   display: grid;
-  gap: 20;
-  -ms-grid-columns: 150 auto;
-  grid-template-columns: 150 auto;
+  gap: 20px;
+  -ms-grid-columns: 150px auto;
+  grid-template-columns: 150px auto;
   place-items: center;
 }
 
@@ -459,17 +459,17 @@ header .hero > h2 {
 .speakers .list .card .image {
   background-image: url(../images/checker.png);
   background-repeat: no-repeat;
-  background-size: 80 80;
-  padding: 20 0 0 20;
+  background-size: 80px 80px;
+  padding: 20px 0 0 20px;
 }
 
 .speakers .list .card .image img {
-  width: 130;
+  width: 130px;
 }
 
 .speakers .list .card h4 {
   font-family: 'Secular One', sans-serif;
-  font-size: 20;
+  font-size: 20px;
 }
 
 .speakers .list .card span {
@@ -481,8 +481,8 @@ header .hero > h2 {
 
 .speakers .list .card hr {
   color: #d3d3d3;
-  margin: 10 0;
-  width: 20;
+  margin: 10px 0;
+  width: 20px;
 }
 
 .speakers .list .card:not(:first-child):not(:nth-child(2)) {
@@ -498,7 +498,7 @@ header .hero > h2 {
 
 .speakers .more-btn {
   display: flex;
-  gap: 10;
+  gap: 10px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -509,7 +509,7 @@ header .hero > h2 {
   border: 2px solid #d3d3d3;
   border-radius: 5px;
   width: 100%;
-  max-width: 300;
+  max-width: 300px;
   cursor: pointer;
   margin-top: 35px;
 }
@@ -565,7 +565,7 @@ header .hero > h2 {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20;
+  gap: 20px;
   width: 100%;
 }
 
@@ -587,7 +587,7 @@ header .hero > h2 {
   -ms-flex-pack: center;
   justify-content: center;
   background-color: #d3d3d3;
-  gap: 50;
+  gap: 50px;
 }
 
 @media (min-width: 768px) {
@@ -611,7 +611,7 @@ header .hero > h2 {
 }
 
 .past hr {
-  width: 30;
+  width: 30px;
   margin: 0;
 }
 
@@ -647,7 +647,7 @@ header .hero > h2 {
   color: #fff;
   font-weight: bold;
   width: 100%;
-  max-width: 400;
+  max-width: 400px;
   aspect-ratio: 1.5;
 }
 
