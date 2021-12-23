@@ -176,7 +176,6 @@ header .navbar {
     -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
     padding: 15px 24px;
-
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -275,7 +274,7 @@ header .hero {
   }
 }
 
-/* eslint-disable */
+/* stylelint-disable */
 header .hero > h1 {
   font-family: 'Secular One', sans-serif;
   font-size: 50px;
@@ -285,7 +284,7 @@ header .hero > h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
-/* eslint-enable */
+/* stylelint-enable */
 
 @media (min-width: 768px) {
   header .hero > h1 {
@@ -310,7 +309,6 @@ header .hero > h2 {
   background-image: url(../images/Sprinkle.svg);
   background-size: cover;
   color: #fff;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -379,11 +377,13 @@ header .hero > h2 {
   font-size: 24px;
 }
 
+/* stylelint-disable */
 .program a {
   display: none;
   margin: 20px 0;
   margin-top: 35px;
 }
+/* stylelint-enable */
 
 @media (min-width: 768px) {
   .program a {
@@ -399,7 +399,6 @@ header .hero > h2 {
 
 .speakers {
   padding: 34px;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -440,6 +439,7 @@ header .hero > h2 {
   }
 }
 
+/* stylelint-disable */
 .speakers .list .card {
   display: -ms-grid;
   display: grid;
@@ -448,6 +448,7 @@ header .hero > h2 {
   grid-template-columns: 150px auto;
   place-items: center;
 }
+/* stylelint-enable */
 
 @media (min-width: 768px) {
   .speakers .list .card {
@@ -472,12 +473,14 @@ header .hero > h2 {
   font-size: 20px;
 }
 
+/* stylelint-disable */
 .speakers .list .card span {
   color: #ec5242;
   font-style: italic;
   font-size: 14px;
   font-weight: bold;
 }
+/* stylelint-enable */
 
 .speakers .list .card hr {
   color: #d3d3d3;
@@ -541,7 +544,6 @@ header .hero > h2 {
   background-color: #272a31;
   padding: 34px;
   color: #d3d3d3;
-
   display: flex;
   gap: 15px;
   -webkit-box-orient: vertical;
@@ -578,7 +580,6 @@ header .hero > h2 {
 
 .footer {
   padding: 34px;
-
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -598,7 +599,6 @@ header .hero > h2 {
 
 .past {
   padding: 34px;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -651,6 +651,7 @@ header .hero > h2 {
   aspect-ratio: 1.5;
 }
 
+/* stylelint-disable */
 .past .list .card:first-child {
   background-image: url(../images/2015.jpg);
 }
@@ -658,10 +659,10 @@ header .hero > h2 {
 .past .list .card:last-child {
   background-image: url(../images/2013.png);
 }
+/* stylelint-enable */
 
 .past .list .card .content {
   border-radius: 5px;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
