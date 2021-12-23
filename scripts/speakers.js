@@ -44,7 +44,7 @@ const speakers = [
 ];
 
 const speakersWrap = document.querySelector('.speakers .list');
-for (let i = 0; i < speakers.length; i++) {
+for (let i = 0; i < speakers.length; i += 1) {
   const speaker = speakers[i];
   speakersWrap.innerHTML += `
     <div class="card">
