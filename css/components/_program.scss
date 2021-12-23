@@ -32,9 +32,16 @@
       display: grid;
       grid-template-columns: 60px 100px auto;
       place-items: center;
+      border: 1px transparent solid;
+      transition: all 0.2s ease-in-out;
 
       @include desktop {
         grid-template-columns: 1fr;
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        border-color: #fff;
       }
 
       & h4 {
@@ -46,8 +53,13 @@
   }
 
   & a {
+    display: none;
     margin: 20px 0;
     margin-top: 35px;
+
+    @include desktop {
+      display: block;
+    }
   }
 
   @include desktop {

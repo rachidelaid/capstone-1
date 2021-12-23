@@ -20,9 +20,20 @@
     ></script>
     <link rel="stylesheet" href="./css/index.css" />
     <title>DeveloperWeek - Conference & Expo, SF Bay Area</title>
+    <script src="./scripts/menu.js" defer></script>
   </head>
   <body>
     <header>
+      <nav class="mobile-menu">
+        <h2>
+          <a href="/" class="logo">DEVELOPER<span>WEEK</span></a>
+        </h2>
+        <ul class="links txt-center">
+          <li><a href="#history">History</a></li>
+          <li><a href="#partners">Partners</a></li>
+        </ul>
+      </nav>
+
       <nav class="top-nav">
         <ul>
           <li>
@@ -42,11 +53,8 @@
           <a href="/" class="logo">DEVELOPER<span>WEEK</span></a>
         </h2>
         <ul class="links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Sponsor</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#partners">Partners</a></li>
         </ul>
         <div class="menu"><span></span><span></span><span></span></div>
       </nav>
@@ -66,7 +74,7 @@
       </section>
     </header>
 
-    <section class="past txt-center">
+    <section class="past txt-center" id="history">
       <h3>See the past Developer Weeks</h3>
       <hr />
       <p>
@@ -75,14 +83,14 @@
       </p>
 
       <div class="list">
-        <div class="card" style="background-image: url(./images/2015.jpg)">
+        <div class="card">
           <div class="content">
             <h4>2015</h4>
             <p>DeveloperWeek in toronto</p>
           </div>
         </div>
 
-        <div class="card" style="background-image: url(./images/2013.png)">
+        <div class="card">
           <div class="content">
             <h4>2013</h4>
             <p>DeveloperWeek in london</p>
@@ -91,7 +99,7 @@
       </div>
     </section>
 
-    <section class="partner">
+    <section class="partner" id="partners">
       <h3>Featured Speakers</h3>
       <hr />
       <div class="logos">

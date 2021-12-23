@@ -2,6 +2,34 @@ header {
   background-image: url(../../images/CircuitBoard.svg);
   background-size: cover;
 
+  & .mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparentize(#fff, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    @include desktop {
+      display: none !important;
+    }
+
+    & .links {
+      font-size: 20px;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & .mobile-menu.show {
+    display: flex;
+  }
+
   & .top-nav {
     background-color: $dark;
     color: #fff;
@@ -66,6 +94,7 @@ header {
       display: flex;
       flex-direction: column;
       gap: 5px;
+      cursor: pointer;
 
       @include desktop {
         display: none;
@@ -76,6 +105,23 @@ header {
         height: 5px;
         background-color: $dark;
         transform-origin: right;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    & .active {
+      position: fixed;
+
+      & span:first-child {
+        transform: rotate(-43deg);
+      }
+
+      & span:nth-child(2) {
+        opacity: 0;
+      }
+
+      & span:last-child {
+        transform: rotate(43deg);
       }
     }
   }
