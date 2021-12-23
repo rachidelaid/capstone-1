@@ -610,10 +610,12 @@ header .hero > h2 {
   gap: 15px;
 }
 
+/* stylelint-disable */
 .past hr {
   width: 30px;
   margin: 0;
 }
+/* stylelint-enable */
 
 .past .list {
   display: flex;
@@ -641,6 +643,7 @@ header .hero > h2 {
   }
 }
 
+/* stylelint-disable */
 .past .list .card {
   background-size: cover;
   border-radius: 5px;
@@ -651,7 +654,6 @@ header .hero > h2 {
   aspect-ratio: 1.5;
 }
 
-/* stylelint-disable */
 .past .list .card:first-child {
   background-image: url(../images/2015.jpg);
 }
