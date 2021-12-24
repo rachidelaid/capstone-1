@@ -1,0 +1,164 @@
+header {
+  background-image: url(../../images/CircuitBoard.svg);
+  background-size: cover;
+
+  & .mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparentize(#fff, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    @include desktop {
+      display: none !important;
+    }
+
+    & .links {
+      font-size: 20px;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & .mobile-menu.show {
+    display: flex;
+  }
+
+  & .top-nav {
+    background-color: $dark;
+    color: #fff;
+    padding: 10px 24px;
+    display: none;
+    justify-content: end;
+
+    & > ul {
+      display: flex;
+      gap: 15px;
+
+      & a {
+        text-decoration: none;
+      }
+    }
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  & .navbar {
+    padding: $basic-padding;
+
+    @include desktop {
+      background-color: #fff;
+      box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+      padding: 15px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      display: none;
+      @include desktop {
+        display: block;
+      }
+    }
+
+    & .logo {
+      color: unset;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    & .links {
+      display: none;
+      gap: 24px;
+
+      @include desktop {
+        display: flex;
+      }
+
+      & a {
+        text-decoration: none;
+        font-weight: 400;
+      }
+    }
+
+    & .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+
+      @include desktop {
+        display: none;
+      }
+
+      & > span {
+        width: 30px;
+        height: 5px;
+        background-color: $dark;
+        transform-origin: right;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    & .active {
+      position: fixed;
+
+      & span:first-child {
+        transform: rotate(-43deg);
+      }
+
+      & span:nth-child(2) {
+        opacity: 0;
+      }
+
+      & span:last-child {
+        transform: rotate(43deg);
+      }
+    }
+  }
+
+  & .hero {
+    padding: $basic-padding;
+    padding-bottom: 70px;
+
+    @include desktop {
+      padding: $basic-padding * 3;
+      width: 70%;
+    }
+
+    & > h1 {
+      font-family: $header-font;
+      font-size: 50px;
+      background-image: url(../../images/BlobGroup.svg);
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
+      @include desktop {
+        font-size: 60px;
+      }
+    }
+
+    & .description {
+      padding: 15px;
+      background-color: darken(#fff, 5);
+      border: 5px solid #fff;
+    }
+
+    & > h2 {
+      font-family: $header-font;
+      font-size: 30px;
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.program {
+  padding: $basic-padding;
+  background-image: url(../../images/Sprinkle.svg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  & h3 {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+
+  & .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 100%;
+      max-width: 1400px;
+      text-align: center;
+    }
+
+    & .card {
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.15);
+      display: grid;
+      grid-template-columns: 60px 100px auto;
+      place-items: center;
+      border: 1px transparent solid;
+      transition: all 0.2s ease-in-out;
+
+      @include desktop {
+        grid-template-columns: 1fr;
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        border-color: #fff;
+      }
+
+      & h4 {
+        color: $primary;
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  }
+
+  & a {
+    display: none;
+    margin: 20px 0;
+    margin-top: 35px;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    & button {
+      display: none;
+    }
+  }
+}
