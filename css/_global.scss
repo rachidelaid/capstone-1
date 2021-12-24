@@ -65,6 +65,13 @@ hr {
   margin-bottom: 40px;
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100% !important;
+}
+
 @for $n from 1 through 5 {
   .p-#{$n} {
     padding: $n * 5px;
@@ -75,11 +82,4 @@ hr {
   @media (min-width: 768px) {
     @content;
   }
-}
-
-.flex-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100% !important;
 }

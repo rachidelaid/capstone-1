@@ -44,8 +44,7 @@ const speakers = [
 ];
 
 const speakersWrap = document.querySelector('.speakers .list');
-for (let i = 0; i < speakers.length; i += 1) {
-  const speaker = speakers[i];
+speakers.forEach((speaker) => {
   speakersWrap.innerHTML += `
     <div class="card">
       <div class="image">
@@ -61,7 +60,7 @@ for (let i = 0; i < speakers.length; i += 1) {
       </div>
     </div>
   `;
-}
+});
 
 const moreBtn = document.querySelector('.more-btn');
 moreBtn.addEventListener('click', () => {
