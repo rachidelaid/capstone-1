@@ -14,6 +14,10 @@
 
 [Live Link](https://rachidelaid.github.io/capstone-1/)
 
+## Presentation Video
+
+[Loom Link](https://www.loom.com/share/c4d1d2a8baf549c9b0b871ae4fa50ee1?sharedAppSource=personal_library)
+
 ## Authors
 
 👤 **Rachid El aid**
