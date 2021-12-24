@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $normal-font;
+  color: $dark;
+  line-height: 1.5;
+}
+
+a {
+  font-weight: bold;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.logo {
+  font-family: $header-font;
+  font-weight: bold;
+  font-size: 20px;
+
+  & span {
+    color: $primary;
+  }
+}
+
+button {
+  padding: $basic-padding + 5;
+  background-color: $primary;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary, 10);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+hr {
+  color: $primary;
+  width: 60px;
+  margin-bottom: 40px;
+}
+
+@for $n from 1 through 5 {
+  .p-#{$n} {
+    padding: $n * 5px;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100% !important;
+}
